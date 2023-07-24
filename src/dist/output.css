@@ -914,20 +914,12 @@ video {
   background-image: url('../fondos/contigoamigo_banner_mobile.webp');
 }
 
-.bg-\[url\(\'\.\.\/src\/formulario\.webp\'\)\] {
-  background-image: url('../src/formulario.webp');
-}
-
-.bg-\[url\(\.\.\/src\/fondos\/contigoamigo_banner_mobile\.jpg\)\] {
-  background-image: url(../src/fondos/contigoamigo_banner_mobile.jpg);
+.bg-\[url\(\'\.\.\/formulario\.webp\'\)\] {
+  background-image: url('../formulario.webp');
 }
 
 .bg-\[url\(\.\.\/fondos\/contigoamigo_banner_mobile\.jpg\)\] {
   background-image: url(../fondos/contigoamigo_banner_mobile.jpg);
-}
-
-.bg-\[url\(\'\.\.\/formulario\.webp\'\)\] {
-  background-image: url('../formulario.webp');
 }
 
 .bg-cover {
@@ -1479,10 +1471,6 @@ video {
 
   .sm\:justify-items-center {
     justify-items: center;
-  }
-
-  .sm\:bg-\[url\(\'\.\.\/src\/fondos\/contigoamigo_banner\.webp\'\)\] {
-    background-image: url('../src/fondos/contigoamigo_banner.webp');
   }
 
   .sm\:bg-\[url\(\'\.\.\/fondos\/contigoamigo_banner\.webp\'\)\] {
