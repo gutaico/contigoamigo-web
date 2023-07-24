@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contigo Amigo® - Seguro de vida</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="icons/favicon.png">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <meta name="description" content="Un seguro de vida para todos. De fácil contratación, accesible y requisitos mínimos. Desde $150mxn anuales, suma asegurada de $25,000mxn">
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '724666415655627');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=724666415655627&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body class="bg-deep-blue">
+
+    <!--<header class="h-20 bg-white w-full fixed">
+
+    </header>-->
+    <div id="app">
+    <a href="http://wa.link/x6w2ye"><div class="text-center bg-green-500 w-24 h-24 p-6 rounded-full fixed bottom-10 right-10 hover:cursor-pointer hover:scale-110 hover:bg-green-500/80 transition-all"><img alt="seguimiento a siniestros" src="icons/customer_service.svg" class="w-full h-full"></div></a>
+
+    <section class="text-white bg-[url('../fondos/contigoamigo_banner_mobile.webp')] bg-center bg-cover sm:bg-[url('../fondos/contigoamigo_banner.webp')]">
+        <div class="px-10 flex h-screen flex-col">
+            <div class="flex-grow"></div>
+            <div class=""><img src="logo_contigoamigo.png" alt="Contigo Amigo Seguro de Vida" class="w-44 pb-10 sm:w-72 sm:pl-20"></div>
+            <div class="flex-grow-0 pb-20">
+                <h1 class="text-5xl font-bold sm:text-7xl sm:block sm:w-[600px] sm:pl-20">Un seguro de vida para todos.</h1>
+                <p class="text-xl py-5 sm:pl-20 sm:text-2xl"><b>Protección</b> para ti y tu familia desde <b>$150 al año</b></p>
+                <div class="mt-8 flex flex-col sm:flex-row sm:pl-20">
+                    <a class="bg-white text-black px-10 border-2 border-white py-5 rounded box-border hover:bg-white/20 hover:text-white transition-all" href="#cta">Contratar</a>    
+                    <a class="px-10 py-5 rounded border-2 border-white box-border mt-5 sm:mt-0 sm:ml-5 hover:bg-white/20 transition-all" href="#pasos">¿Cómo funciona?</a>    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white px-10 py-5 sm:py-20">
+        <div class="sm:flex sm:container sm:justify-items-center mx-auto sm:max-w-screen-lg">
+            <div>
+                <div class="text-5xl text-deep-blue font-bold py-5">Házlo por los que se quedan</div>
+                <p class="pb-10 text-black/30">Un seguro de vida ofrece a tu familia tranquilidad en caso de que llegues a faltar.</p>
+            </div>
+            <ul class="pl-5 sm:pl-10 sm:pt-5">
+                <li class="pb-10 flex">
+                    <div class="mr-5 basis-14 shrink-0">
+                        <img alt="Seguro fácil de obtener" src="icons/check.svg" class="w-12">
+                    </div>
+                    <div>
+                        <span class="font-extrabold text-2xl text-blue-amigo-200 block pb-2">Fácil</span>
+                        <p>Hombres y mujeres  de 18 a 70 años que se encuentren físicamente activas.</p>
+                    </div>
+                </li>
+                <li class="pb-10 flex">
+                    <div class="mr-5 basis-14 shrink-0">
+                        <img alt="Seguro rápido de obtener" src="icons/flash.svg" class="w-12">
+                    </div>
+                    <div>
+                        <span class="font-extrabold text-2xl text-blue-amigo-300 block pb-2">Rápido</span>
+                        <p>La contratación es inmediata porque no solicitamos estudios médicos.</p>
+                    </div>
+                </li>
+                <li class="flex pb-10">
+                    <div class="mr-5 basis-14 shrink-0">
+                        <img alt="Seguro de vida accesible" src="icons/money.svg" class="w-12">
+                    </div>
+                    <div>
+                        <span class="font-extrabold text-2xl text-blue-amigo-400 block pb-2">Económico</span>
+                        <p>Protege a tu familia desde $150 pesos al año.</p>
+                    </div>
+                </li>
+                <li class="flex">
+                    <div class="mr-5 basis-14 shrink-0">
+                        <img alt="Seguro de vida confiable" src="icons/confiabilidad.svg" class="w-12">
+                    </div>
+                    <div>
+                        <span class="font-extrabold text-2xl text-blue-amigo-400 block pb-2">Confiable</span>
+                        <p>Un seguro respaldado por nuestros más de 30 años de experiencia en soluciones de protección.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="pasos"  class="bg-white">
+        <div class="grid grid-cols-[0.5fr_3fr] sm:grid-cols-[3fr_0.5fr_3fr] grid-rows-[auto_auto_auto_auto_auto_auto] gap-y-16 gap-x-5 py-10 px-7 sm:container sm:mx-auto sm:max-w-screen-lg">
+            <div class="row-start-1 col-start-1 row-end-1 col-end-3 sm:col-end-2 sm:text-right">
+                <div class="text-5xl text-deep-blue font-bold py-5">¿Cómo funciona?<BR><span class="text-[#F09022]">Es muy fácil.</span></div>
+            </div>
+            <div class="row-start-2 col-start-2 row-end-2 col-end-2 sm:row-start-1 sm:row-end-1 sm:col-start-3 sm:col-end-3">
+                <div class="pb-3 text-2xl text-deep-blue font-bold sm:mt-3">Elige el módulo de tu conveniencia</div>
+                <div class="h-20 w-full text-white bg-orange-amigo-300 my-2 rounded-xl flex text-xs items-center px-3 box-border">
+                    <div class="basis-12 grow-0 text-center"><span class="hidden">Módulo</span><span class="text-4xl font-extrabold text-center">A</span></div>
+                    <div class="text-center grow">
+                        <div>Pago anual</div>
+                        <div><span class="text-2xl font-extrabold">$150</span></div>
+                    </div>
+                    <div class="text-center grow">
+                        <div>Suma asegurada</div>
+                        <div><span class="text-2xl font-extrabold">$25,000</span></div>
+                    </div>
+                </div>
+                <div class="h-20 w-full text-white bg-orange-amigo-200 my-2 rounded-xl flex text-xs items-center px-3 box-border">
+                    <div class="basis-12 grow-0 text-center"><span class="hidden">Módulo</span><span class="text-4xl font-extrabold text-center">B</span></div>
+                    <div class="text-center grow">
+                        <div>Pago anual</div>
+                        <div><span class="text-2xl font-extrabold">$300</span></div>
+                    </div>
+                    <div class="text-center grow">
+                        <div>Suma asegurada</div>
+                        <div><span class="text-2xl font-extrabold">$50,000</span></div>
+                    </div>
+                </div>
+                <div class="h-20 w-full text-white bg-orange-amigo-100 my-2 rounded-xl flex text-xs items-center px-3 box-border">
+                    <div class="basis-12 grow-0 text-center"><span class="hidden">Módulo</span><span class="text-4xl font-extrabold text-center">C</span></div>
+                    <div class="text-center grow">
+                        <div>Pago anual</div>
+                        <div><span class="text-2xl font-extrabold">$450</span></div>
+                    </div>
+                    <div class="text-center grow">
+                        <div>Suma asegurada</div>
+                        <div><span class="text-2xl font-extrabold">$75,000</span></div>
+                    </div>
+                </div>
+                <div class="h-20 w-full text-white bg-blue-amigo-400 my-2 rounded-xl flex text-xs items-center px-3 box-border">
+                    <div class="basis-12 grow-0 text-center"><span class="hidden">Módulo</span><span class="text-4xl font-extrabold text-center">D</span></div>
+                    <div class="text-center grow">
+                        <div>Pago anual</div>
+                        <div><span class="text-2xl font-extrabold">$600</span></div>
+                    </div>
+                    <div class="text-center grow">
+                        <div>Suma asegurada</div>
+                        <div><span class="text-2xl font-extrabold">$100,000</span></div>
+                    </div>
+                </div>
+                <div class="h-20 w-full text-white bg-blue-amigo-300 y-2 rounded-xl flex text-xs items-center px-3 box-border">
+                    <div class="basis-12 grow-0 text-center"><span class="hidden">Módulo</span><span class="text-4xl font-extrabold text-center">E</span></div>
+                    <div class="text-center grow">
+                        <div>Pago anual</div>
+                        <div><span class="text-2xl font-extrabold">$1,500</span></div>
+                    </div>
+                    <div class="text-center grow">
+                        <div>Suma asegurada</div>
+                        <div><span class="text-2xl font-extrabold">$250,000</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-start-3 col-start-2 row-end-3 col-end-2 sm:row-start-2 sm:row-end-2 sm:col-start-1 sm:col-end-1 sm:text-right">
+                <div class="pb-3 text-2xl text-deep-blue font-bold sm:mt-3">Completas una breve solicitud de información</div>
+                <p class="pb-3 text-black/30">Te pediremos información personal y tu domicilio, así como información sobre enfermedades o condiciones preexistentes.</p>
+                <a href="#cta"><div class=" border border-orange-amigo-200 text-center p-5 px-10 w-full rounded-xl mt-5 hover:bg-orange-amigo-200/85 text-orange-amigo-200 hover:cursor-pointer">Comienza aquí</div></a>
+            </div>
+            <div class="row-start-4 col-start-2 row-end-4 col-end-2 sm:row-start-3 sm:row-end-3 sm:col-start-3 sm:col-end-3 sm:text-left">
+                <div class="pb-3 text-2xl text-deep-blue font-bold sm:mt-3">Obtienes tu órden de pago</div>
+                <p class="pb-3 text-black/30">Recibirás una órden de pago con la que podrás activar tu seguro Contigo Amigo</p>
+            </div>
+            <div class="row-start-5 col-start-2 row-end-6 col-end-2 sm:row-start-4 sm:row-end-4 sm:col-start-1 sm:col-end-1 sm:text-right">
+                <div class="pb-3 text-2xl text-deep-blue font-bold sm:mt-3">Pagas tu póliza en bancos o puntos de conveniencia autorizados</div>
+                
+                <p class="text-black/30 pb-3 font-bold">Puedes hacer tu pago en:
+                    <ul class="text-black/30 list-disc list-inside">
+                        <li class="pb-1">Instituciones bancarias</li>
+                        <li class="pb-5">Con tarjeta o efectivo en puntos de venta autorizados (OXXO y 7eleven)</li>
+                    </ul>
+                </p>
+
+                <div class="mx-auto text-right">
+                    <img alt="OXXO" class="h-20 inline-block pr-5" src="logo_oxxo.png">
+                    <img alt="7eleven" class="h-20 inline-block" src="logo_seven.png">
+                    <img alt="Pago con tarjeta" class="h-24 inline-block pl-5" src="credit_card.webp">
+                </div>
+                <p class="pt-5 text-black/30 text-xs">Una vez hecho tu pago, tu seguro queda activado por una vigencia máxima de un año.</p>
+            </div>
+            <div class="row-start-7 col-start-1 row-end-8 col-end-3 sm:col-start-1 sm:col-end-4 sm:text-center pl-5 sm:pl-0">
+                <div class="pb-16 text-5xl text-deep-blue font-bold sm:text-5xl">¡Ya estás asegurado!</div>
+            </div>
+            <div class="row-start-2 col-start-1 row-end-7 col-end-1 sm:row-start-1 sm:col-start-2 sm:col-end-2">
+                <svg class="relative left-[50%]" width="1px" height="100%">
+                    <rect x="0" y="30" width="100%" height="100%" fill="gray" />
+                </svg>
+            </div>
+            <div class="row-start-2 col-start-1 row-end-2 col-end-1 z-10 sm:col-start-2 sm:col-end-2 sm:row-start-1 sm:row-end-1">
+                <svg class="mx-auto" width="50" height="50">
+                    <circle cx="25" cy="25" r="20" fill="#CCCCCC" />
+                    <circle cx="25" cy="25" r="10" fill="#2C327A" />
+                </svg>
+            </div>
+            <div class="row-start-3 col-start-1 row-end-3 col-end-1 z-10 sm:col-start-2 sm:col-end-2 sm:row-start-2 sm:row-end-2">
+                <svg class="mx-auto" width="50" height="50">
+                    <circle cx="25" cy="25" r="20" fill="#CCCCCC" />
+                    <circle cx="25" cy="25" r="10" fill="#2C327A" />
+                </svg>
+            </div>
+            <div class="row-start-4 col-start-1 row-end-4 col-end-1 z-10 sm:col-start-2 sm:col-end-2 sm:row-start-3 sm:row-end-3">
+                <svg class="mx-auto" width="50" height="50">
+                    <circle cx="25" cy="25" r="20" fill="#CCCCCC" />
+                    <circle cx="25" cy="25" r="10" fill="#2C327A" />
+                </svg>
+            </div>
+            <div class="row-start-5 col-start-1 row-end-5 col-end-1 z-10 sm:col-start-2 sm:col-end-2 sm:row-start-4 sm:row-end-4">
+                <svg class="mx-auto" width="50" height="50">
+                    <circle cx="25" cy="25" r="20" fill="#CCCCCC" />
+                    <circle cx="25" cy="25" r="10" fill="#2C327A" />
+                </svg>
+            </div>
+        </div>
+    </section>
+    <section class="bg-cover bg-center bg-[url(../fondos/contigoamigo_banner_mobile.jpg)] pt-10 sm:pt-20 sm:pb-8">
+        <div class="sm:container sm:max-w-screen-xl pb-28 sm:mx-auto">
+            <h3 class="text-4xl text-white font-extrabold mx-10 text-center"><span class="font-light">¿Por qué deberías contratar</span> Contigo Amigo?</h3>
+            <div class="flex flex-col px-10 sm:flex-row sm:flex-wrap sm:justify-center sm:items-center">
+                <div class="text-blue-amigo-200 bg-white rounded-xl mt-10 p-10 text-center sm:w-2/5 lg:w-1/4 sm:mr-10 sm:mt-10 sm:box-border sm:h-[400px] shadow-xl">
+                    <div class="text-center"><img alt="Seguro de vida accesible" src="icons/check.svg" class="h-20 mx-auto"></div>
+                    <div class="text-2xl font-extrabold py-5">Un seguro accesible</div>
+                    <div><p class="">Dirigido a personas que quieren proteger a su familia pero no tiene acceso a un seguro de vida tradicional  por su alto costo.</p></div>
+                </div>
+                <div class="text-blue-amigo-200 bg-white rounded-xl mt-10 p-10 text-center sm:w-2/5 lg:w-1/4 sm:mr-10 sm:mt-10 sm:box-border sm:h-96 shadow-xl">
+                    <div class="text-center"><img alt="Seguro de vida para todos" src="icons/check.svg" class="h-20 mx-auto"></div>
+                    <div class="text-2xl font-extrabold py-5">Un seguro para todos</div>
+                    <div><p>Es un seguro de vida individual. Puedes adquirir
+                        uno para cada miembro de tu familia desde los
+                        18 años hasta los 70 años.</p></div>
+                </div>
+                <div class="text-blue-amigo-200 bg-white rounded-xl mt-10 p-10 text-center sm:w-2/5 lg:w-1/4 sm:mr-10 sm:mt-10 sm:box-border sm:h-96 shadow-xl">
+                    <div class="text-center"><img alt="Seguro de vida básico" src="icons/check.svg" class="h-20 mx-auto"></div>
+                    <div class="text-2xl font-extrabold py-5">Cobertura básica</div>
+                    <div><p>Este es un seguro de vida que cubre únicamente fallecimiento del asegurado.</p></div>
+                </div>
+                <div class="text-blue-amigo-200 bg-white rounded-xl mt-10 p-10 text-center sm:w-2/5 lg:w-1/4 sm:mr-10 sm:mt-10 sm:box-border sm:h-96 shadow-xl">
+                    <div class="text-center"><img alt="Contratación inmediata" src="icons/check.svg" class="h-20 mx-auto"></div>
+                    <div class="text-2xl font-extrabold py-5">Contratación inmediata</div>
+                    <div><p>Respondes una pequeña solicitud de información, pagas tu certificado y tu seguro queda activado. La vigencia máxima es de un año.</p></div>
+                </div>
+                <div class="text-blue-amigo-200 bg-white rounded-xl mt-10 p-10 text-center sm:w-2/5 lg:w-1/4 sm:mr-10 sm:mt-10 sm:box-border sm:h-96 shadow-xl">
+                    <div class="text-center"><img alt="Seguro con requisitos mínimos" src="icons/check.svg" class="h-20 mx-auto"></div>
+                    <div class="text-2xl font-extrabold py-5">Requisitos mínimos</div>
+                    <div><p>No se requieren exámenes médicos. La única exclusión es que no cuentes con enfermedades graves preexistentes al momento de la contratación.</p></div>
+                </div>
+                <div class="text-blue-amigo-200 bg-white rounded-xl mt-10 p-10 text-center sm:w-2/5 lg:w-1/4 sm:mr-10 sm:mt-10 sm:box-border sm:h-96 shadow-xl">
+                    <div class="text-center"><img alt="Seguro de vida flexible" src="icons/check.svg" class="h-20 mx-auto"></div>
+                    <div class="text-2xl font-extrabold py-5">Flexibilidad</div>
+                    <div><p>Es un seguro flexible pues permite combinar varios módulos y puedes recibir una suma asegurada hasta por $250,000 pesos.</p></div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="bg-white">
+        <h3 class="text-4xl text-blue-amigo-200 font-extrabold text-center p-10 pt-20"><span class="font-light">Protégete con un plan </span>a tu medida.</h3>
+        <div class="sm:flex sm:container sm:flex-col xl:flex xl:flex-row xl:container xl:justify-center sm:mx-auto">
+            <a href="#cta" @click="this.selected_option = 'Módulo A'" class="w-full h-auto bg-orange-amigo-200 flex flex-col sm:max-xl:flex-row sm:max-xl:items-center text-white text-center xl:w-1/6 xl:rounded-[25px] xl:mr-5 sm:max-xl:rounded-[25px] sm:max-xl:mb-5 transition-all hover:bg-opacity-80 sm:hover:scale-110 hover:cursor-pointer sm:hover:drop-shadow-2xl">
+                <div class="tracking-widest text-2xl py-5 bg-black/10 mb-5 xl:rounded-t-[25px] sm:max-xl:rounded-l-[25px] sm:max-xl:flex-grow sm:max-xl:self-stretch sm:max-xl:mb-0"><div class="sm:max-xl:flex sm:max-xl:flex-col sm:max-xl:justify-center sm:max-xl:h-full"><div class="text-5xl font-extrabold px-10">A</div></div></div>
+                <div class="sm:max-xl:flex sm:max-xl:flex-col sm:max-xl:text-left sm:max-xl:flex-grow sm:max-xl:ml-10">
+                    <div class="uppercase tracking-widest sm:text-xs xl:text-base">Único pago anual</div>
+                    <div class="text-6xl xl:text-4xl font-extrabold sm:text-4xl lg:text-6xl">$150*</div>
+                </div>
+                <div class="sm:max-xl:flex sm:max-xl:flex-col sm:max-xl:text-left sm:max-xl:flex-grow">
+                    <div class="pt-5 uppercase tracking-widest sm:max-xl:pt-0 sm:text-xs xl:text-base">Suma Asegurada</div>
+                    <div class="text-7xl xl:text-4xl font-extrabold sm:text-4xl lg:text-6xl">$25,000</div>
+                </div>
+                <div class="py-10 m-10 sm:m-5 xl:m-5 xl:py-5 bg-black/20 uppercase tracking-widest rounded-3xl sm:max-xl:px-5 sm:text-xs">Contratar</div>
+            </a>
+            <a href="#cta" @click="this.selected_option = 'Módulo B'" class="w-full h-auto bg-orange-amigo-100 flex flex-col sm:max-xl:flex-row sm:max-xl:items-center text-white text-center xl:w-1/6 xl:rounded-[25px] xl:mr-5 sm:max-xl:rounded-[25px] sm:max-xl:mb-5 transition-all hover:bg-opacity-80 sm:hover:scale-110 hover:cursor-pointer sm:hover:drop-shadow-2xl">
+                <div class="tracking-widest text-2xl py-5 bg-black/10 mb-5 xl:rounded-t-[25px] sm:max-xl:rounded-l-[25px] sm:max-xl:flex-grow sm:max-xl:self-stretch sm:max-xl:mb-0"><div class="sm:max-xl:flex sm:max-xl:flex-col sm:max-xl:justify-center sm:max-xl:h-full"><div class="text-5xl font-extrabold px-10">B</div></div></div>
+                <div class="sm:max-xl:flex sm:max-xl:flex-col sm:max-xl:text-left sm:max-xl:flex-grow sm:max-xl:ml-10">
+                    <div class="uppercase tracking-widest sm:text-xs xl:text-base">Único pago anual</div>
+                    <div class="text-6xl xl:text-4xl font-extrabold sm:text-4xl lg:text-6xl">$300*</div>
+                </div>
+                <div class="sm:max-xl:flex sm:max-xl:flex-col sm:max-xl:text-left sm:max-xl:flex-grow">
+                    <div class="pt-5 uppercase tracking-widest sm:max-xl:pt-0 sm:text-xs xl:text-base">Suma Asegurada</div>
+                    <div class="text-7xl xl:text-4xl font-extrabold sm:text-4xl lg:text-6xl">$50,000</div>
+                </div>
+                <div class="py-10 m-10 sm:m-5 xl:m-5 xl:py-5 bg-black/20 uppercase tracking-widest rounded-3xl sm:max-xl:px-5 sm:text-xs">Contratar</div>
+            </a>
+            <a href="#cta" @click="this.selected_option = 'Módulo C'" class="w-full h-auto bg-blue-amigo-400 flex flex-col sm:max-xl:flex-row sm:max-xl:items-center text-white text-center xl:w-1/6 xl:rounded-[25px] xl:mr-5 sm:max-xl:rounded-[25px] sm:max-xl:mb-5 transition-all hover:bg-opacity-80 sm:hover:scale-110 hover:cursor-pointer sm:hover:drop-shadow-2xl">
+                <div class="tracking-widest text-2xl py-5 bg-black/10 mb-5 xl:rounded-t-[25px] sm:max-xl:rounded-l-[25px] sm:max-xl:flex-grow sm:max-xl:self-stretch sm:max-xl:mb-0"><div class="sm:max-xl:flex sm:max-xl:flex-col sm:max-xl:justify-center sm:max-xl:h-full"><div class="text-5xl font-extrabold px-10">C</div></div></div>
+                <div class="sm:max-xl:flex sm:max-xl:flex-col sm:max-xl:text-left sm:max-xl:flex-grow sm:max-xl:ml-10">
+                    <div class="uppercase tracking-widest sm:text-xs xl:text-base">Único pago anual</div>
+                    <div class="text-6xl xl:text-4xl font-extrabold sm:text-4xl lg:text-6xl">$450*</div>
+                </div>
+                <div class="sm:max-xl:flex sm:max-xl:flex-col sm:max-xl:text-left sm:max-xl:flex-grow">
+                    <div class="pt-5 uppercase tracking-widest sm:max-xl:pt-0 sm:text-xs xl:text-base">Suma Asegurada</div>
+                    <div class="text-7xl xl:text-4xl font-extrabold sm:text-4xl lg:text-6xl">$75,000</div>
+                </div>
+                <div class="py-10 m-10 sm:m-5 xl:m-5 xl:py-5 bg-black/20 uppercase tracking-widest rounded-3xl sm:max-xl:px-5 sm:text-xs">Contratar</div>
+            </a>
+            <a href="#cta" @click="this.selected_option = 'Módulo D'" class="w-full h-auto bg-blue-amigo-300 flex flex-col sm:max-xl:flex-row sm:max-xl:items-center text-white text-center xl:w-1/6 xl:rounded-[25px] xl:mr-5 sm:max-xl:rounded-[25px] sm:max-xl:mb-5 transition-all hover:bg-opacity-80 sm:hover:scale-110 hover:cursor-pointer sm:hover:drop-shadow-2xl">
+                <div class="tracking-widest text-2xl py-5 bg-black/10 mb-5 xl:rounded-t-[25px] sm:max-xl:rounded-l-[25px] sm:max-xl:flex-grow sm:max-xl:self-stretch sm:max-xl:mb-0"><div class="sm:max-xl:flex sm:max-xl:flex-col sm:max-xl:justify-center sm:max-xl:h-full"><div class="text-5xl font-extrabold px-10">D</div></div></div>
+                <div class="sm:max-xl:flex sm:max-xl:flex-col sm:max-xl:text-left sm:max-xl:flex-grow sm:max-xl:ml-10">
+                    <div class="uppercase tracking-widest sm:text-xs xl:text-base">Único pago anual</div>
+                    <div class="text-6xl xl:text-4xl font-extrabold sm:text-4xl lg:text-6xl">$600*</div>
+                </div>
+                <div class="sm:max-xl:flex sm:max-xl:flex-col sm:max-xl:text-left sm:max-xl:flex-grow">
+                    <div class="pt-5 uppercase tracking-widest sm:max-xl:pt-0 sm:text-xs xl:text-base">Suma Asegurada</div>
+                    <div class="text-7xl xl:text-4xl font-extrabold sm:text-4xl lg:text-6xl">$100,000</div>
+                </div>
+                <div class="py-10 m-10 sm:m-5 xl:m-5 xl:py-5 bg-black/20 uppercase tracking-widest rounded-3xl sm:max-xl:px-5 sm:text-xs">Contratar</div>
+            </a>
+            <a href="#cta" @click="this.selected_option = 'Módulo E'" class="w-full h-auto bg-blue-amigo-200 flex flex-col sm:max-xl:flex-row sm:max-xl:items-center text-white text-center xl:w-1/6 xl:rounded-[25px] xl:mr-5 sm:max-xl:rounded-[25px] sm:max-xl:mb-5 transition-all hover:bg-opacity-80 sm:hover:scale-110 hover:cursor-pointer sm:hover:drop-shadow-2xl">
+                <div class="tracking-widest text-2xl py-5 bg-black/10 mb-5 xl:rounded-t-[25px] sm:max-xl:rounded-l-[25px] sm:max-xl:flex-grow sm:max-xl:self-stretch sm:max-xl:mb-0"><div class="sm:max-xl:flex sm:max-xl:flex-col sm:max-xl:justify-center sm:max-xl:h-full"><div class="text-5xl font-extrabold px-10">E</div></div></div>
+                <div class="sm:max-xl:flex sm:max-xl:flex-col sm:max-xl:text-left sm:max-xl:flex-grow sm:max-xl:ml-10">
+                    <div class="uppercase tracking-widest sm:text-xs xl:text-base">Único pago anual</div>
+                    <div class="text-6xl xl:text-4xl font-extrabold sm:text-4xl lg:text-6xl">$1,500*</div>
+                </div>
+                <div class="sm:max-xl:flex sm:max-xl:flex-col sm:max-xl:text-left sm:max-xl:flex-grow">
+                    <div class="pt-5 uppercase tracking-widest sm:max-xl:pt-0 sm:text-xs xl:text-base">Suma Asegurada</div>
+                    <div class="text-7xl xl:text-4xl font-extrabold sm:text-4xl lg:text-6xl">$250,000</div>
+                </div>
+                <div class="py-10 m-10 sm:m-5 xl:m-5 xl:py-5 bg-black/20 uppercase tracking-widest rounded-3xl sm:max-xl:px-5 sm:text-xs">Contratar</div>
+            </a>
+        </div> 
+        <p class="container text-center text-black/40 p-10 text-sm mx-auto">*Todos los pagos anuales y sumas aseguradas están pesos mexicanos</p> 
+    </section>
+    <section id="cta" class="bg-[url('../formulario.webp')] bg-cover bg-center md:pt-1 md:pb-1">
+        <div class="container bg-white md:flex md:mx-auto md:my-20 sm:max-w-screen-md shadow-xl md:rounded-2xl">
+            <div class="p-10 md:grow md:rounded-2xl">
+                <div class="text-3xl text-blue-amigo-200 font-extrabold md:pl-5">Protege el futuro de los tuyos</div>
+                <ul class="md:pl-5">
+                    <li class="mt-5"><img src="icons/check.svg" class="w-5 inline-block align-bottom mr-2">Personaliza tu seguro con los mòdulos de de tu conveniencia</li>
+                    <li class="mt-5"><img src="icons/check.svg" class="w-5 inline-block align-bottom mr-2">Paga tu póliza en puntos de conveniencia como OXXO y 7eleven</li>
+                    <li class="mt-5"><img src="icons/check.svg" class="w-5 inline-block align-bottom mr-2">Suma asegurada hasta por $250,000</li>
+                    <li class="mt-5"><img src="icons/check.svg" class="w-5 inline-block align-bottom mr-2">Contratación inmediata</li>
+                </ul>
+            </div>
+            <div class="bg-orange-amigo-100 p-10 md:grow shadow-2xl md:rounded-2xl">
+                <div class="text-3xl text-white font-extrabold text-center">
+                    Contáctanos para iniciar tu proceso
+                    <p class="text-base font-light pt-5">Nuestros asesores te contactarán para continuar con tu contratación</p>
+                    <div id="form" class="pt-5">
+                        <div class="border-2 border-white p-2 box-border text-xs text-left">
+                            <label for="nombre"><span class="uppercase tracking-widest font-light">Nombre</span></label>
+                            <input id="nombre" type="text" class="bg-transparent w-full text-lg font-normal focus:outline-none" v-model="this.user_name">
+                        </div>
+                        <div class="border-2 border-white p-2 box-border text-xs border-t-0 text-left">
+                            <label for="telefono_contacto"><span class="uppercase tracking-widest font-light">Teléfono de contacto</span></label>
+                            <input id="telefono_contacto" type="number" class="bg-transparent w-full text-lg font-normal focus:outline-none" v-model="this.user_phone">
+                        </div>
+                        <div class="border-2 border-white p-2 box-border text-xs border-t-0 text-left">
+                            <label for="email"><span class="uppercase tracking-widest font-light">Correo electrónico</span></label>
+                            <input id="email" type="email" class="bg-transparent w-full text-lg font-normal focus:outline-none" v-model="this.user_email">
+                        </div>
+                        <div class="border-2 border-white p-2 box-border text-xs border-t-0 text-left">
+                            <label for="email"><span class="uppercase tracking-widest font-light">¿Qué módulo es de tu interés?</span></label>
+                            <select class="bg-transparent w-full text-lg font-normal focus:outline-none" v-model="this.selected_option">
+                                <option value="Módulo A" selected>A - Suma asegurada $25,000</option>
+                                <option value="Módulo B">B - Suma asegurada $50,000</option>
+                                <option value="Módulo C">C - Suma asegurada $75,000</option>
+                                <option value="Módulo D">D - Suma asegurada $100,000</option>
+                                <option value="Módulo E">E - Suma asegurada $250,000</option>
+                            </select>
+                            <!-- <input id="email" type="email" class="bg-transparent w-full text-lg font-normal focus:outline-none"> -->
+                        </div>
+                        <a :href="setWhatsappLink" :style="validator"><input type="button" :style="validator" class="w-full p-5 uppercase tracking-widest bg-white text-orange-amigo-100 text-base mt-5 active:scale-95 hover:scale-105 transition-transform cursor-pointer" value="Enviar"></a>
+                        <div class="text-xs font-normal pt-5" v-if="this.error"><img src="icons/error.webp" style="width:10px; vertical-align: middle;" class="mr-2 inline-block"><p class="inline-block">{{this.error}}</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    
+</body>
+
+<script>
+    const { createApp } = Vue
+
+    createApp({
+        data() {
+            return {
+                selected_option : "Módulo A",
+                user_email : undefined,
+                user_name : undefined,
+                user_phone : undefined,
+                error : undefined
+            }
+        },
+        methods:{
+            
+        },
+        computed : {
+            validator(){
+
+                let mailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+                let cellphoneRegex = /^(\d{10})$/
+
+                if(!this.user_name){
+                    this.error = "Es necesario introducir tu nombre completo"
+                    return {
+                        pointerEvents : 'none',
+                        color: '#CCCCCC'
+                    }
+                }else if(!this.user_phone || !cellphoneRegex.test(this.user_phone)){
+                    this.error = "Es necesario introducir un teléfono o celular válido"
+                    return {
+                        pointerEvents : 'none',
+                        color: '#CCCCCC'
+                    }
+                }else if(!this.user_email || !mailRegex.test(this.user_email)){
+                    this.error = "Es necesario introducir un correo electrónico válido"
+                    return {
+                        pointerEvents : 'none',
+                        color: '#CCCCCC'
+                    }}
+
+                this.error = undefined
+
+                return {
+                    pointerEvents : 'auto'
+                };
+            },
+            setWhatsappLink(){
+                let link = 'https://wa.me/523328354461/?text='
+                let message = `Quiero hablar con un asesor. Estoy interesado en contratar el ${this.selected_option} del seguro de vida Contigo Amigo. Mi nombre es ${this.user_name}, mi número es ${this.user_phone} y mi correo electrónico es ${this.user_email}.`
+                message = message.replace(/ /g, '%20')
+                link = link + message
+                return link
+            }
+        }
+    }).mount('#app')
+</script>
+
+</html>
