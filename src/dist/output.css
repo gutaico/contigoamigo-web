@@ -1243,6 +1243,10 @@ video {
   transition-duration: 150ms;
 }
 
+body{
+  font-family: raleway, sans-serif;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

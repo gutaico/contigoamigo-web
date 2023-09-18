@@ -7,6 +7,7 @@
     <title>Contigo Amigo® - Seguro de vida</title>
     <link href="dist/output.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="icons/favicon.png">
+    <link rel="stylesheet" href="https://use.typekit.net/hto7wkw.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     <meta name="description" content="Un seguro de vida para todos. De fácil contratación, accesible y requisitos mínimos. Desde $150mxn anuales, suma asegurada de $25,000mxn">
     <!-- Meta Pixel Code -->
@@ -98,7 +99,7 @@
     <section id="pasos"  class="bg-white">
         <div class="grid grid-cols-[0.5fr_3fr] sm:grid-cols-[3fr_0.5fr_3fr] grid-rows-[auto_auto_auto_auto_auto_auto] gap-y-16 gap-x-5 py-10 px-7 sm:container sm:mx-auto sm:max-w-screen-lg">
             <div class="row-start-1 col-start-1 row-end-1 col-end-3 sm:col-end-2 sm:text-right">
-                <div class="text-5xl text-deep-blue font-bold py-5">¿Cómo funciona?<BR><span class="text-[#F09022]">Es muy fácil.</span></div>
+                <div id="funcionamiento-section" class="text-5xl text-deep-blue font-bold py-5">¿Cómo funciona?<BR><span class="text-[#F09022]">Es muy fácil.</span></div>
             </div>
             <div class="row-start-2 col-start-2 row-end-2 col-end-2 sm:row-start-1 sm:row-end-1 sm:col-start-3 sm:col-end-3">
                 <div class="pb-3 text-2xl text-deep-blue font-bold sm:mt-3">Elige el módulo de tu conveniencia</div>
@@ -218,7 +219,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-cover bg-center bg-[url(../fondos/contigoamigo_banner_mobile.jpg)] pt-10 sm:pt-20 sm:pb-8">
+    <section id="argumentos-venta" class="bg-cover bg-center bg-[url(../fondos/contigoamigo_banner_mobile.jpg)] pt-10 sm:pt-20 sm:pb-8">
         <div class="sm:container sm:max-w-screen-xl pb-28 sm:mx-auto">
             <h3 class="text-4xl text-white font-extrabold mx-10 text-center"><span class="font-light">¿Por qué deberías contratar</span> Contigo Amigo?</h3>
             <div class="flex flex-col px-10 sm:flex-row sm:flex-wrap sm:justify-center sm:items-center">
@@ -258,7 +259,7 @@
         </div>
         
     </section>
-    <section class="bg-white">
+    <section id="modulos-section" class="bg-white">
         <h3 class="text-4xl text-blue-amigo-200 font-extrabold text-center p-10 pt-20"><span class="font-light">Protégete con un plan </span>a tu medida.</h3>
         <div class="sm:flex sm:container sm:flex-col xl:flex xl:flex-row xl:container xl:justify-center sm:mx-auto">
             <a href="#cta" @click="this.selected_option = 'Módulo A'" class="w-full h-auto bg-orange-amigo-200 flex flex-col sm:max-xl:flex-row sm:max-xl:items-center text-white text-center xl:w-1/6 xl:rounded-[25px] xl:mr-5 sm:max-xl:rounded-[25px] sm:max-xl:mb-5 transition-all hover:bg-opacity-80 sm:hover:scale-110 hover:cursor-pointer sm:hover:drop-shadow-2xl">
@@ -374,7 +375,7 @@
 
     <footer class="w-full bg-white">
     <div
-      class="bg-white p-10 pt-16 text-center text-2xl font-medium text-ss-azul flex flex-col-reverse sm:flex-row sm:text-xs sm:text-left sm:container sm:max-w-4xl mx-auto md:text-base">
+      class="bg-white p-10 pt-16 text-center text-2xl font-medium text-blue-amigo-200 flex flex-col-reverse sm:flex-row sm:text-xs sm:text-left sm:container sm:max-w-4xl mx-auto md:text-base">
     <div class="mt-10 sm:pr-10 sm:mt-0 sm:basis-1/4">
       <img alt="Contigo Amigo" class="w-1/2 mx-auto md:w-full" src="contigoamigo_color.webp" />
       <p class="text-black/40 mt-10">© Copyright 2022. All Right Reserved by Contigo Amigo.</p>
@@ -382,10 +383,10 @@
 
     <div class="mb-5 mt-14 sm:mt-0 sm:pr-10 sm:basis-1/4">
       <h4 class="text-black/40 mb-5">Contigo Amigo</h4>
-      <a href="https://serviciosseguros.com.mx/seguros-agropecuarios"><p class="mb-3">¿Cómo funciona?</p></a>
-      <a href="https://serviciosseguros.com.mx/seguros-para-danos"><p class="mb-3">¿Por qué Contigo Amigo?</p></a>
-      <a href="https://serviciosseguros.com.mx/seguros-para-personas"><p class="mb-3">Módulos</p></a>
-      <a href="https://serviciosseguros.com.mx/seguros-para-autos"><p class="mb-3">Contratar</p></a>
+      <a href="#funcionamiento-section"><p class="mb-3">¿Cómo funciona?</p></a>
+      <a href="#argumentos-venta"><p class="mb-3">¿Por qué Contigo Amigo?</p></a>
+      <a href="#modulos-section"><p class="mb-3">Módulos</p></a>
+      <a href="#cta"><p class="mb-3">Contratar</p></a>
     </div>
 
     <div class="mt-14 sm:mt-0 sm:pr-10 sm:basis-1/4">
